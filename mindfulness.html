@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness | GreenBite</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/mindfulness.css">
+   <link rel="stylesheet" href="css/style.css">
+  <script src="js/navbar.js" defer></script>
+  <script src="js/mindfulness.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GreenBite</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html" class="active">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Mindfulness & Relaxation</h1>
+    <p>Take a deep breath, relax your body, and refresh your mind.</p>
+
+    <!-- Breathing Animation -->
+    <section class="breathing-section">
+      <h2>Guided Breathing</h2>
+      <div class="circle"></div>
+      <p id="breathing-text">Inhale...</p>
+    </section>
+
+    <!-- Meditation Timer -->
+    <section class="timer-section">
+      <h2>Meditation Timer</h2>
+      <input type="number" id="minutes" placeholder="Minutes" min="1">
+      <button onclick="startMeditation()">Start</button>
+      <div id="timer-display">00:00</div>
+      <p id="session-count">Sessions completed: 0</p>
+    </section>
+
+    <!-- Ambient Sounds -->
+    <section class="sounds-section">
+      <h2>Ambient Sounds</h2>
+      <button onclick="playSound('rain')">🌧 Rain</button>
+      <button onclick="playSound('forest')">🌲 Forest</button>
+      <button onclick="playSound('ocean')">🌊 Ocean</button>
+      <button onclick="stopSound()">⏹ Stop</button>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-section">
+      <h3>GreenBite</h3>
+      <p>Promoting healthy living through recipes, workouts, and mindfulness.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>Email: support@greenbite.com</p>
+      <p>Phone: +94 77 123 4567</p>
+      <p>Location: Colombo, Sri Lanka</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

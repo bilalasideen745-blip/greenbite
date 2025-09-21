@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes | GreenBite</title>
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+<script src="js/navbar.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+   <header>
+    <nav class="navbar">
+        <div class="logo">GreenBite</div>
+        <ul class="nav-links">
+             <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="calculator.html">Calorie Calculator</a></li>
+                <li><a href="workout.html">Workout</a></li>
+                <li><a href="mindfulness.html">Mindfulness</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+    <!-- Search & Filter -->
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Search recipes by name...">
+        <select id="filterCategory">
+            <option value="all">All Categories</option>
+            <option value="salad">Salad</option>
+            <option value="chicken">Chicken</option>
+            <option value="smoothie">Smoothie</option>
+            <option value="bowl">Bowl</option>
+            <option value="breakfast">Breakfast</option>
+        </select>
+    </section>
+
+    <!-- Recipes Container -->
+    <section class="recipes-container" id="recipesContainer">
+        <!-- Recipe cards will be loaded here by JS -->
+    </section>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="Recipe Image">
+            <h3>Ingredients</h3>
+            <ul id="modalIngredients"></ul>
+            <h3>Steps</h3>
+            <ol id="modalSteps"></ol>
+            <h3>Nutrition Info</h3>
+            <table id="modalNutrition">
+                <tr><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th></tr>
+            </table>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-section">
+      <h3>GreenBite</h3>
+      <p>Promoting healthy living through recipes, workouts, and mindfulness.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>Email: support@greenbite.com</p>
+      <p>Phone: +94 77 123 4567</p>
+      <p>Location: Colombo, Sri Lanka</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GreenBite. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="js/recipes.js"></script>
+</body>
+</html>
