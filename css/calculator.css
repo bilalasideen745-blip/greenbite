@@ -1,0 +1,53 @@
+.calculator {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.calculator h2 {
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input, form select {
+    padding: 8px;
+    width: 60%;
+}
+
+button {
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #219150;
+}
+
+.results {
+    display: none;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.results h3, .results h4 {
+    color: #27ae60;
+}

@@ -1,0 +1,73 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #2d6a4f;
+  margin-bottom: 20px;
+}
+
+/* Breathing Animation */
+.circle {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: #95d5b2;
+  animation: breathe 8s infinite;
+}
+
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+#breathing-text {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Timer */
+.timer-section input {
+  padding: 10px;
+  margin: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+.timer-section button {
+  padding: 10px 20px;
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.timer-section button:hover {
+  background: #40916c;
+}
+
+#timer-display {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #e63946;
+}
+
+/* Sounds */
+.sounds-section button {
+  margin: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #52b788;
+  color: white;
+  border-radius: 5px;
+}
+
+.sounds-section button:hover {
+  background: #40916c;
+}

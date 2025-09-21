@@ -1,0 +1,59 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+form button {
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #40916c;
+}
+
+/* Workout Plan Display */
+.workout-plan {
+  display: grid;
+  gap: 20px;
+}
+
+.workout-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.workout-card h3 {
+  margin-bottom: 10px;
+  color: #2d6a4f;
+}
+
+.timer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #e63946;
+}
